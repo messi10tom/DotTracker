@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
                 }
                 else {
                     std::cout << "Found this argv " << argv[i] << std::endl;
-                    throw std::runtime_error("Found this argv from init " + std::string(argv[i]));
+                    throw std::runtime_error("Found this argv from add " + std::string(argv[i]));
                 }
             }
             std::cout << "successfully staged  file" << std::endl;
