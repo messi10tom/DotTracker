@@ -1,4 +1,4 @@
-# DotTracker
+# Dott
 
 _A minimal dotfile tracker with version controlling and management capabilities._
 
@@ -11,7 +11,7 @@ _A minimal dotfile tracker with version controlling and management capabilities.
 
 ## Overview
 
-**DotTracker** (`dott`) is a CLI tool designed to help you efficiently track, version, and manage your dotfiles. Inspired by version control concepts, DotTracker allows you to initialize repositories, stage files, and keep your configuration files organized and portable.
+**DotTracker** (`dott`) is a CLI tool designed to help you efficiently track, version, and manage your dotfiles. Inspired by version control concepts, Dott allows you to initialize repositories, stage files, and keep your configuration files organized and portable.
 
 - **Track your dotfiles** in a dedicated repository.
 - **Stage and version** configuration files easily.
