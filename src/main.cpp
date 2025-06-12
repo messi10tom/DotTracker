@@ -56,7 +56,7 @@ int main(int argc, char* argv[]) {
                 }
                 else {
                     std::cout << "Found this argv " << argv[i] << std::endl;
-                    throw std::runtime_error("Found this argv from init " + std::string(argv[i]));
+                    throw std::runtime_error("Found this argv from add " + std::string(argv[i]));
                 }
             }
             std::cout << "successfully staged  file" << std::endl;
@@ -67,7 +67,7 @@ int main(int argc, char* argv[]) {
         "status",
         "Shows staged files awaiting commit.",
         "<directory>...",
-        {""},
+        {},
         [](int argc, char** argv){
             if (! argc) {
                 std::cerr << "No directory provided" << std::endl;
