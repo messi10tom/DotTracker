@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+main
+
+# tracker
+.dt
+.dott
+
+# test folder
+/test/
