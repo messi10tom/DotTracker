@@ -65,7 +65,7 @@ int main(int argc, char* argv[]) {
         "status",
         "Shows staged files awaiting commit.",
         "<directory>...",
-        {""},
+        {},
         [](int argc, char** argv){
             if (! argc) {
                 std::cerr << "No directory provided" << std::endl;
