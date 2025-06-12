@@ -15,11 +15,8 @@ struct PathObj{
 
 std::string _calculate_file_hash(const fs::path& file_path);
 bool _store_object(const fs::path& file_path, const std::string& hash);
-bool _update_index(const std::vector<std::pair<std::string, fs::path>>& staged_files);
+bool _update_index(const std::string& hash, const fs::path& file_path);
 
-
-void run(int argc, char *argv[]);
-
-bool handle_init(fs::path& dir_path);
-bool handle_stage(fs::path& file_path);
-bool show_staged_files(fs::path& path);
+bool handle_init(const fs::path& dir_path);
+bool handle_stage(const fs::path& file_path);
+bool show_staged_files(const fs::path& path);

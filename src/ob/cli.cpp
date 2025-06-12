@@ -56,7 +56,7 @@ int CLI::run(int argc, char* argv[]) {
             it->second.action(argc - 2, argv + 2);
         }
         catch (const std::exception& e) {
-            std::cerr << "[Dott error] " << e.what() << std::endl;
+            std::cerr << e.what() << "\n\n";
             print_command_help(it->second);
         }
     } else {
