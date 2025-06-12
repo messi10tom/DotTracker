@@ -108,7 +108,7 @@ bool handle_init(const fs::path& dir_path)
   }
 
   {
-    std::string index_file_path = dott_dir / HEAD_FILE_NAME;
+    std::string index_file_path = dott_dir / INDEX_FILE_NAME;
     std::ofstream index_file(index_file_path);
     if (! index_file.is_open())
       throw DottException("Cannot open `" + index_file_path + "`");
