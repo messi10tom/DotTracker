@@ -5,6 +5,8 @@
 #include <ostream>
 #include <stdexcept>
 
+namespace fs = std::filesystem;
+
 int main(int argc, char* argv[]) {
     CLI dottracker("dott", "Dott — A minimal dotfile tracker with version controlling and managing. \
 \nTrack, version, and manage dotfiles efficiently from the CLI.");
