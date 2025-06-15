@@ -1,0 +1,28 @@
+name: DotTracker CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: |
+        sudo apt update
+        sudo apt install -y g++ clang-format
+
+    - name: Check code formatting (clang-format)
+      run: |
+        find src include -name '*.cpp' -o -name '*.h' | xargs clang-format -n --Werror
+
+    - name: Build project
+      run: |
+        g++ -std=c++20 -Wall -Wextra -Werror -Iinclude src/dott/dott.cpp -o dott
